@@ -17,45 +17,22 @@ The following software tools were used for the design, simulation, and analysis 
   
 **LightTools**: Primary ray-tracing software used for testing retro-reflectivity, image resolution, and the impact of fabrication tolerances.
 
-
-  
-**MATLAB**: Utilized for extracting RGB matrices from complex images and calculating tristimulus values for perceived color analysis.
-
+ 
 
 
 ## Simulation Methodology
 
-The repository is structured to replicate the three main phases of testing described in the paper:
+The repository is structured to replicate the main phases of testing described in the paper:
 
-### 1. Preliminary Ray Fan Tests
+### 1. Preliminary Distance Tests
 
-Simulations aimed at observing basic ray behavior through the DLCC vs. standard Corner Cube boxes.
+Simulations aimed at observing basic ray behavior through the DLCC vs. standard Corner Cube panels.
 
+### 2. Angle Viewing Test
+
+Simulations changed the viewing angle to mimic the angular incidence effects on the DLCC performance. 
 
 **Materials**: PMMA (n=1.49) and 2,2'-Thiodiethanol (n=1.52).
-
-
-
-### 2. Complex Image & Viewer Distance Analysis
-
-Tests that evaluate image resolution from a viewer's perspective at varying distances (e.g., 2cm, 20cm).
-
-
-**Technique**: Overlapping three separate RGB sources (650nm, 550nm, 450nm) weighted by blackbody temperature to create "True Color" results.
-
-
-
-### 3. Fabrication Tolerance Modeling
-
-Simulations that incorporate a **0.1mm CNC machining tolerance** (rounding of internal corners) to investigate the mismatch between ideal simulations and physical prototypes.
-
-## Core Equations
-
-The simulations utilize **Fresnel coefficients** to model reflectance and transmittance at normal incidence:
-
-$$ R_{F} = \left(\frac{n_1 - n_2}{n_1 + n_2}\right)^2 $$
- 
-Where $$R_F$$ is the power reflectance and $$n_x$$ represents the refractive indexes of the media.
 
 ## Citation
 
